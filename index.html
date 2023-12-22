@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AutoScheduleMaker</title>
+    <style>
+        .form-row {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <h1>Live信息</h1>
+    <form id="liveInfo">
+        <div id="formContainer">
+            活动名称   <input type="text" id="liveName"><br />
+            活动地点   <input type="text" id="liveLocation"><br />
+            活动日期   <input type="text" id="liveDate"><br />
+            开始时间   <input type="time" id="liveStart"><br />
+            结束时间   <input type="time" id="liveEnd"><br />
+            <br />
+            <br />
+            团体名称 | 演出开始时间 | 演出结束时间 | 特典会开始时间 | 特典会结束时间 | 特典会场地
+            <div class="form-row">
+                <input type="text" name="name[]">
+                <input type="time" name="start[]" >
+                <input type="time" name="end[]" >
+                <input type="time" name="meetStart[]" >
+                <input type="time" name="meetEnd[]" >
+                <input type="text" name="location[]" >
+                <button type="button" class="add-row">+</button>
+            </div>
+        </div>
+        <input type="submit" value="提交" id="submit">
+    </form>
+</body>
+</html>
